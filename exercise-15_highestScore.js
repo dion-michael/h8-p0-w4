@@ -52,6 +52,11 @@ function highestScore (students) {
       name: 'Anastasia',
       score: 78,
       class: 'wolves'
+    },
+    {
+      name: 'Dimas',
+      score: 100,
+      class: 'foxes'
     }
   ]));
   

@@ -1,5 +1,6 @@
 function changeMe(arr) {
     // you can only write your code here!
+    var data = {}
     for(var x=0; x<arr.length; x++){
         var age = arr[x][3];
         if(age < 2019){
@@ -8,18 +9,19 @@ function changeMe(arr) {
         else{
             age = 'invalid birth year'
         }
-        var data = {
-            firstName: arr[x][0],
-            lastName: arr[x][1],
-            gender: arr[x][2],
-            age: age
-        }
+        
+            data.firstName = arr[x][0]
+            data.lastName = arr[x][1]
+            data.gender = arr[x][2],
+            data.age = age
+        
         console.log(x+1 +'. '+ data.firstName, data.lastName, ':\n', data);
+        data = {};
     }
   }
   
   // TEST CASES
-  changeMe([['Christ', 'Evans', 'Male', 1982], ['Robert', 'Downey', 'Male']]); 
+  changeMe([['Christ', 'Dimas', 'Male', 1982], ['Robert', 'Downey', 'Male']]); 
   // 1. Christ Evans:
   // { firstName: 'Christ',
   //   lastName: 'Evans',

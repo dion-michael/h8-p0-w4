@@ -21,14 +21,14 @@ function naikAngkot(arrPenumpang) {
                 end = y+1
             }
         }
-        data.bayar = 2000 * (end-start)
+        data.bayar = 2000 * (Math.abs(end-start))
         result.push(data)
     }
     return result;
 }   
   
   //TEST CASE
-  console.log(naikAngkot([['Dimitri', 'B', 'F'], ['Icha', 'A', 'B']]));
+  console.log(naikAngkot([['Dimitri', 'F', 'B'], ['Icha', 'A', 'B']]));
   // [ { penumpang: 'Dimitri', naikDari: 'B', tujuan: 'F', bayar: 8000 },
   //   { penumpang: 'Icha', naikDari: 'A', tujuan: 'B', bayar: 2000 } ]
   

@@ -37,8 +37,8 @@ function graduates (students) {
       class: 'foxes'
     },
     {
-      name: 'Alexei',
-      score: 85,
+      name: 'Dimas',
+      score: 60,
       class: 'wolves'
     },
     {
