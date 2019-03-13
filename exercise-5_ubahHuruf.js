@@ -6,9 +6,11 @@ function ubahHuruf(kata) {
     for(var y=0; y<library.length; y++){
       if(kata[x] === library[library.length-1]){
         result+=library[0]
+        break;
       }
       else if(kata[x] === library[y]){
         result+=library[y+1]
+        break;
       }
     }
   }
@@ -16,7 +18,7 @@ function ubahHuruf(kata) {
 }
 
 // TEST CASES
-console.log(ubahHuruf('wow')); // xpx
+console.log(ubahHuruf('woz')); // xpx
 console.log(ubahHuruf('developer')); // efwfmpqfs
 console.log(ubahHuruf('javascript')); // kbwbtdsjqu
 console.log(ubahHuruf('keren')); // lfsfo
